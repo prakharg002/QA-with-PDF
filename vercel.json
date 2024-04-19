@@ -1,8 +1,13 @@
 {
-  "functions": {
-    "python3.9": {
-      "runtime": "python3.9",
-      "memory": 512
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "public/ingest.py",
+      "use": "@vercel/python"
     }
-  }
+  ]
 }
